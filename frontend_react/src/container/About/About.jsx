@@ -16,8 +16,8 @@ const About = () => {
   return (
     <>
     <h2 className="head-text">Services to maintain 
-    <span>A Clean</span> <br />and  
-    <span>Healthy Home Or Environment</span></h2>
+    <span> A Clean </span> <br /> and  
+    <span> Healthy Home Or Environment </span></h2>
 
     <div className="app__profiles">
       {
