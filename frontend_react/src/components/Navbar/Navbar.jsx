@@ -12,6 +12,7 @@ const Navbar = () => {
     //Using BEM
     <nav className='app__navbar'>
       <div className='app__navbar-logo'>
+        {/* Name and Logo of brand */}
         <img src={images.logo} alt='logo' />
       </div>
       <ul className='app__navbar-links'>
@@ -23,6 +24,7 @@ const Navbar = () => {
         ))}
       </ul>
 
+      {/* Navbar for Mobile */}
       <div className="app__navbar-menu">
        <HiMenuAlt4 onClick={() => setToggle(true)}/>
 
@@ -31,8 +33,8 @@ const Navbar = () => {
          whileInView={{ x: [300, 0]}}
          transition={{ duration: 0.85, ease: 'easeOut'}}
          >
-           <HiX onClick={() => setToggle(false)}/>
-            <ul>
+          <HiX onClick={() => setToggle(false)}/>
+          <ul>
            {['home', 'about', 'work', 'skills', 'contact'].map((item) => (
           <li key={item}>
            <a href={`#${item}`} onClick={() => setToggle(false)}>{item}</a>

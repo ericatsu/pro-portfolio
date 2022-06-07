@@ -45,6 +45,7 @@
 
         flex-direction: column;
 
+// the dot on top
         div {
             width: 5px;
             height: 5px;
@@ -81,7 +82,7 @@
 }
 
 .app__navbar-menu {
-    width: 15px;
+    width: 35px;
     height: 35px;
     border-radius: 50%;
     position: relative;
@@ -105,6 +106,7 @@
         z-index: 5;
         padding: 1rem;
         width: 80%;
+        height: 100vh;
         
         display: flex;
         justify-content: flex-end;
@@ -149,8 +151,8 @@
                     &:hover{
             div {
                 background: var(--secondary-color);
+               }
             }
-          }
                }
            }
        }
@@ -158,4 +160,8 @@
         display: none;
      }
     }
+
+    @media screen and (min-width: 900px) {
+        display: none;
+     }
 }
