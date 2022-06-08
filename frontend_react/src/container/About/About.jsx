@@ -1,15 +1,16 @@
-import React, { useState, useEffect} from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
 import { images } from '../../constants';
+// import { urlFor, client } from '../../client';
 
 import './About.scss';
 
 //Array for what will be on about page
 const abouts = [
-  { title: 'Mission & Vission', descripntion: 'The Company mission', imgUrl: images.about01},
-  { title: 'Mission & Vission', descripntion: 'The Company mission', imgUrl: images.about02},
-  { title: 'Mission & Vission', descripntion: 'The Company mission', imgUrl: images.about03},
-  { title: 'Mission & Vission', descripntion: 'The Company mission', imgUrl: images.about04}
+  { title: 'Mission & Vission', description: 'The Company mission', imgUrl: images.about01},
+  { title: 'Mission & Vission', description: 'The Company mission', imgUrl: images.about02},
+  { title: 'Mission & Vission', description: 'The Company mission', imgUrl: images.about03},
+  { title: 'Mission & Vission', description: 'The Company mission', imgUrl: images.about04}
 ]
 
 const About = () => {
