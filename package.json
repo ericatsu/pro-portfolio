@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "emailjs-com": "^3.2.0",
+    "react-scroll": "^1.8.7",
+    "styled-components": "^5.3.5"
+  }
+}
